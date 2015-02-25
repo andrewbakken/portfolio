@@ -8,11 +8,7 @@
     .social a {
         font-size:2em;
     }
-    .content-footer {
-        padding-left:2em;
-        padding-right:2em;
-        padding-top:4em;
-    }
+   
     .content-footer,
     .introduction-section,
     .location-section,
@@ -23,6 +19,9 @@
         margin-top: 2em;
 }
 }
+ .content-footer {
+        padding-top:3em;
+    }
 
 
 h1 { 
