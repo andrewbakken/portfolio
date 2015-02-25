@@ -12,10 +12,22 @@
         padding-left:2em;
         padding-right:2em;
     }
+    .content-footer,
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        width:20em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+}
 }
 
 
-h1 { text-shadow: 1px 1px 1px #fff; }
+h1 { 
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+
+ }
 
 body {
     /* Typography Declarations */
@@ -46,7 +58,7 @@ ul {padding-left:0;}
     /* Layout Declarations */
     margin-bottom: 0.1em;
     /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 2em;
 }
 
@@ -68,7 +80,7 @@ ul {padding-left:0;}
     max-width: 38em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4em;
+    margin-top: 1em;
 }
 
 .social > li {
@@ -77,6 +89,7 @@ ul {padding-left:0;}
 
 .introduction-section > p,
 .location-section > p,
+.questions-section > p,
 .content-footer > p {
     /* Typography Declarations */
     font-weight: 300;
@@ -84,7 +97,7 @@ ul {padding-left:0;}
 }
 
 .questions-section > h2 {
-    font-family: "Gentium Book Basic", Georgia, serif;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     /* Layout */
