@@ -1,109 +1,243 @@
-@media only screen and (max-width: 500px) {
-    .masthead {
-        padding: 3em 0;
-    }
-    .masthead-heading {
-        font-size: 3em;
-    }
-    .social a {
-        font-size:2em;
-    }
-   
-    .content-footer,
-    .introduction-section,
-    .location-section,
-    .questions-section {
-        width:20em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
- .content-footer {
-        padding-top:3em;
-    }
-
-
-h1 { 
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-
- }
-
 body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif; 
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration:none;
+    color: orange;
+}
+.me-image {
+    float:left;
+    margin-right:3rem;
+}
+.me-text {
+    margin: 0 5 0 5rem;
+    color:white;
+    font-size: .5em;
+    text-align: left;
+}
+.about-me {
+    margin-top:4rem;
+    background-color:#b7b8b8;
+
 }
 
-ul {padding-left:0;}
+/* Navigation Section */
+.top-navigation {
+    background-color: white;
+    opacity:.70;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: center;
+}
+.top-navigation > .content {
+    width: 970px;
+    height: 80px;
+    margin: 0 auto;
+}
+.content {
+    padding: 0 15px;
+    margin: 6rem auto 0 auto;
+    width: 100%;
+}
+.top-navigation .logo {
+    height: 80px;
+    width:250px;
+}
+.top-navigation .links{
+    float:right;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    color: grey; 
+    margin-top:30px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links > .active {
+    color: orange;
+    font-weight: 500;
+}
+.top-navigation .links {
+    cursor: pointer;
+    color: orange;
+    transition: color 0.5s ease;
+}
+.top-navigation a {
+    color:grey;
+}
+.top-navigation a:hover {
+    color:orange;
+    transition: color 0.3s ease;
 }
 
-.masthead {
-    padding: 6em 0;
-    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+/* Main Section*/
+
+.introduction {
+    background-image: url("../images/hull.jpg");
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: solid 1em #FFCF33;
+    height: 45.938rem;
+    overflow: auto;
+}
+.introduction h1 {
+    margin-top: 20.5rem;
+    font-size: 3.125rem;
+}
+.introduction h1, .introduction h3 {
     color: white;
-    background-color:black;
-}
-
-.masthead-intro {
-    /* Layout Declarations */
-    margin-bottom: 0.1em;
-    /* Typography Declarations */
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 2em;
-}
-
-.masthead-heading {
-    /* Layout Declarations */
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
-
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-}
-
-.social > li {
-    display: inline-block;
-}
-
-.introduction-section > p,
-.location-section > p,
-.questions-section > p,
-.content-footer > p {
-    /* Typography Declarations */
+    text-align: center;
     font-weight: 300;
-    letter-spacing: 0.05em;
+    margin-bottom:1rem;
+}
+.big-button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    margin:0 auto;
+    margin-top:2rem;
+    margin-bottom:3rem;
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    color: white;
+    font-size: 1.125rem;
+    text-align: center;
+}
+.big-button:hover{
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+.big-button a{
+    color: white;
 }
 
-.questions-section > h2 {
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
+/* Everyone needs Karma*/
+
+
+.cases {
+    font-size:2.75rem;
+    margin:1.625rem 0 3.125;
+    font-weight:300;
+    color:#1d1e21;
+    text-align:center;
+    overflow: hidden;
+    padding-bottom: 5rem;
+
 }
 
-section > h1 {
-    margin-top: 2em;
+.cases .devices > li {
+width: 33.3333333%;
+float: left;
+margin-top:3rem;
+}
+
+.cases h3 {
+    color:grey;
+    font-size: 1.8rem;
+    margin-top:15px;
+}
+.cases h6 {
+    font-size: 1rem;
+    margin-top:15px;
+    color:orange;
+}
+
+
+.devices h3 {
+font-weight: 400;
+font-size: 1.563rem;
+margin: 2.5rem 0px 1.875rem;
+}
+
+/* Social Bottom*/
+
+.social {
+padding-bottom: 9.375rem;
+text-align: center;
+}
+.social .icons > li {
+border-radius: 1.25rem;
+width: 2.5rem;
+display: inline-block;
+margin: 1.25rem 5px;
+border: 1px solid #eaebec;
+padding: 0.625rem 0;
+text-align: center;
+cursor: pointer;
+}
+.social .twitter {
+color: #55acee;
+}
+
+.social .copy {
+font-size: 0.9rem;
+font-weight: 300;
+color: #838994;
+}
+
+.social hr {
+border: 0;
+border-top: 1px solid #eaebec;
+margin: 1.313rem 0;
+}
+
+.social .facebook {
+color: #4c66a4;
+}
+
+.social .instagram {
+color: #3f729b;
 }
