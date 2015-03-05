@@ -54,17 +54,33 @@ a {
 .me-image {
     float:left;
     margin-right:3rem;
+    width: 334px; 
+    height: 334px; 
+    border-radius:30px; 
+    overflow: hidden; 
 }
 .me-text {
-    margin: 0 5 0 5rem;
-    color:white;
-    font-size: .5em;
+    padding:2rem;
+    color:black;
     text-align: left;
 }
 .about-me {
-    margin-top:4rem;
-    background-color:#b7b8b8;
+    background-color:#F5F5F5;
+    height: 21rem;
+    font-size: 27px;
+    padding: 15px;
+    margin: 0rem auto 0 auto;
+    width: 100%;
 
+}
+
+.logo {
+    margin-left:5rem;
+    margin-top:5px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -78,8 +94,8 @@ a {
 
 }
 .top-navigation > .content {
-    width: 970px;
-    height: 80px;
+    width: 100%;
+    height: 85px;
     margin: 0 auto;
 }
 .content {
@@ -87,21 +103,20 @@ a {
     margin: 6rem auto 0 auto;
     width: 100%;
 }
-.top-navigation .logo {
-    height: 80px;
-    width:250px;
-}
+
 .top-navigation .links{
     float:right;
     font-family: 'Roboto', sans-serif; 
     font-size: 16px;
     color: grey; 
-    margin-top:30px;
+    margin:30px 50px 0 0 ;
     -webkit-font-smoothing: antialiased;
+
 }
 .top-navigation .links li {
     display: inline-block;
     margin-left: 25px;
+    margin-right:20px;
 }
 .top-navigation .links > .active {
     color: orange;
@@ -128,7 +143,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
-    overflow: auto;
+    overflow: hidden;
 }
 .introduction h1 {
     margin-top: 20.5rem;
@@ -189,6 +204,8 @@ margin-top:3rem;
     color:grey;
     font-size: 1.8rem;
     margin-top:15px;
+    padding-left:15px;
+    padding-right:45px;
 }
 .cases h6 {
     font-size: 1rem;
