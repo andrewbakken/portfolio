@@ -49,8 +49,31 @@ table {
 }
 a {
     text-decoration:none;
-    color: orange;
+    color: #0099F7;
 }
+.portfolio h1 {
+    margin:0rem 0rem 3rem 0rem;
+}
+.portfolio {
+    margin-right:auto;
+    margin-left:auto;
+}
+.boxes-wrapper {
+    margin-right:auto;
+    margin-left:auto;
+    width:750px;
+    margin-top:25px;
+}
+
+.left-box {
+    float:left;
+    margin-bottom:25px;
+    margin-left:17px;
+    max-width: 49%;
+    position:relative;
+}
+
+
 .me-image {
     float:left;
     margin-right:3rem;
@@ -69,10 +92,10 @@ a {
     height: 21rem;
     font-size: 27px;
     padding: 15px;
-    margin: 0rem auto 0 auto;
     width: 100%;
 
 }
+
 
 .logo {
     margin-left:5rem;
